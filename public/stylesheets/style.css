@@ -1,0 +1,205 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+p
+{
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color: #000;
+}
+h3 {
+	font-family: Verdana, Geneva, sans-serif;
+	padding-bottom: 5px;
+	font-size:16px;
+}
+html, body
+{
+		height: 100%;
+		margin-top: 0px !important;
+		margin: 0;
+		padding: 0;
+}
+body {
+    text-align: left;
+    vertical-align: middle;
+ 	
+}
+#header {
+	background: url(/images/header_bg.png) no-repeat;
+	width: 1206px;
+	height: 123px;
+	margin: 10px auto 0 auto;
+	position: relative;
+}
+#text_header {
+	position: absolute;
+	width: 200px;
+	top: 30px;
+	left: 25px;
+	
+}
+#text_header p{
+	color: #ffffff;
+	font: 27px   Verdana, Geneva, sans-serif;
+	
+
+}
+/*- Menu Tabs--------------------------- */ 
+
+
+#tabs {
+  float:left;
+  width: 600px;
+  font-size:100%;
+  line-height:normal;
+  position:absolute;
+  top: 84px;
+  left: 350px;
+  }
+#tabs ul {
+  margin:0;
+  padding: 15px 10px 0 50px;
+  list-style:none;
+  }
+#tabs li {
+  display:inline;
+  margin:0;
+  padding:0;
+  }
+#tabs a {
+  float:left;
+  background:url(/images/tableft.png) no-repeat left top;
+  margin:0;
+  padding:0 0 0 5px;
+  text-decoration:none;
+  margin-right: 5px;
+  }
+#tabs a span {
+  float:left;
+  display:block;
+  background: url(/images/tabright.png) no-repeat right top;
+  padding: 5px 10px 4px 5px;
+  color:#ffffff;
+  font: 12px Verdana, Geneva, sans-serif;
+  }
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#tabs a span {float:none;}
+/* End IE5-Mac hack */
+#tabs a:hover span {
+  color:#000;
+  }
+#tabs a:hover {
+  background-position:0% -31px;
+  }
+#tabs a:hover span {
+  background-position:100% -31px;
+  }
+#tabs a:active span {
+  color:#000;
+  }
+#tabs a:active {
+  background-position:0% -31px;
+  height: 38px;
+  margin-top: -5px;
+  margin-right: -5px;
+  padding: 5px 10px 4px 5px;
+  }
+#tabs a:active span {
+  background-position:100% -31px;
+  margin-top: -5px;
+  height: 38px;
+  padding: 5px 10px 4px 5px; 
+  }
+ 
+#calc {
+	position:absolute;
+	top: 30px;
+	right: 20px;
+	background: url(/images/calc_btn.png) no-repeat;
+	width: 179px;
+	height: 60px;
+}
+#section {
+	position: relative;
+	height: 100%;
+	width: 1206px;
+	margin: 0 auto;
+}
+
+#nav {
+	margin-top: 10px;
+	padding-top: 10px;
+	margin-left: 0px;
+	width: 321px;
+	position:absolute;
+}
+.nav_top {
+    background: url(/images/nav_top.png) no-repeat scroll 0 0 transparent;
+    height: 18px;
+}
+.nav_body {
+    background: url(/images/nav_m.png) repeat scroll 0 0 transparent;
+    margin-bottom: 0 !important;
+    padding: 0 20px 10px 20px;
+}
+.nav_bottom {
+    background: url(/images/nav_b.png) no-repeat scroll 0 0 transparent;
+    height: 18px;
+}
+#nav ul {
+	 list-style:none;
+	 margin-bottom: -15px;
+}
+#nav li {
+	padding: 5px 0;
+}
+#nav a {
+	font: 16px Verdana, Geneva, sans-serif;
+	text-decoration:none;
+	text-transform: uppercase;
+	color: #33578a;
+}
+#nav a:hover {
+	color: #000;
+}
+#nav ul li ul{
+		list-style: none inside;
+		margin-bottom: 10px;
+	}
+#nav ul li ul li {
+	list-style-type: none;
+    behavior: expression( !this.before
+    ? this.before = this.innerHTML = '&mdash;&nbsp;' + this.innerHTML : '' );
+    margin-left: 1.24em;
+}
+#nav ul li ul li: before{
+		content: '\2014\a0';
+}
+#nav ul li ul li a {
+	font-size: 14px;
+	text-transform: none;
+	
+}
+#content {
+	position:absolute;
+	width:870px;
+	top: 5px;
+	left: 340px;
+	height: 100%;
+}
+#footer {
+	position: relative;
+	width: 1206px;
+	margin:0 auto;
+	padding-bottom:20px;
+}
+#footer p {
+	font: 10px Verdana, Geneva, sans-serif;
+	width: 300px;
+	color: #0a475a;
+	margin-left:15px;
+}

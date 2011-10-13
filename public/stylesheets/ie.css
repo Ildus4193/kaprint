@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+#tabs {
+  float:left;
+  width: 600px;
+  font-size:100%;
+  line-height:normal;
+  position:absolute;
+  top: 83px;
+  left: 350px;
+}
+
+
