@@ -5,7 +5,7 @@ Typography::Application.routes.draw do
   devise_scope :user do 
     #match "sign_in" => "devise/sessions#new", :as => "sign_in"
     match "sign_out" => "devise/sessions#destroy", :as => "destroy_session_user"
-    match "admin" => "devise/registrations#new", :as => "sign_up"
+    match "admin" => "devise/sessions#new", :as => "sign_up"
     get "users/password/new" => "devise/passwords#new", :as => "recover_password", :method => :get
     
   end
